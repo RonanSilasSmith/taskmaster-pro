@@ -63,6 +63,11 @@ $(".list-group").on("click", "p", function(){
 
 //triggers conversion from box to text
 $(".list-group").on("blur", "textarea", function(){
+  //quick note on this function: for some reason this just did not work for a while
+  //when I went to troubleshoot later, it was working.
+  //I don't know how this happened, 
+  //So whatever causes bugs in the future is likely inconsistent.
+
   var text = $(this)
     .val()
     .trim();
